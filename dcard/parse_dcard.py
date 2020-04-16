@@ -14,14 +14,17 @@ driver.find_element_by_css_selector('button.sc-1ehu1w3-2').click()
 time.sleep(2)
 
 html = driver.page_source
-soup = bs(html, 'html.parser') #
+soup = bs(html, 'html.parser') #html結構樹
 
 data = soup.find_all('span',{'class':'sc-6oxm01-2 hiTIMq'})
 # print(data)
+
+
 meta_datas = []
 for x in data:
     meta_datas.append(x.text.strip())
 # print(meta_datas)
+
 
 forums = []
 author = []
