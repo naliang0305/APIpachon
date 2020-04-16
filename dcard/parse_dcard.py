@@ -31,7 +31,7 @@ for i in range(len(meta_datas)):
         forums.append(meta_datas[i])
     if i%3 == 1:
         author.append(meta_datas[i])
-    if i%2 == 0:
+    if i%3 == 2:
         time.append(meta_datas[i])
 
 data_2 = soup.find_all('h2',{'class': 'sc-1v1d5rx-3 eihOFJ'})
